@@ -1,4 +1,4 @@
-# 🗂️ Task Management REST API
+# 🗂️User And Task Management REST API
 
 This is a simple Task Management backend system built with **Node.js**, **Express.js**, and **MongoDB**, designed as part of the **GEMS Internship Backend Task**.
 
@@ -28,28 +28,7 @@ It supports secure user authentication and provides CRUD operations for managing
 - express-validator
 - dotenv
 
----
 
-## 📁 Folder Structure
-.
-├── controllers/
-│ ├── userController.js
-│ └── taskController.js
-├── models/
-│ ├── User.js
-│ └── Task.js
-├── routes/
-│ ├── userRoutes.js
-│ └── taskRoutes.js
-├── middleware/
-│ ├── auth.js
-│ └── validate.js
-├── validators/
-│ ├── userValidator.js
-│ └── taskValidator.js
-├── .env
-├── server.js
-└── README.md
 
 
 ---
@@ -60,25 +39,25 @@ It supports secure user authentication and provides CRUD operations for managing
 
 | Method | Endpoint         | Description               | Access |
 |--------|------------------|---------------------------|--------|
-| POST   | `/api/users`     | Register a new user       | Public |
-| POST   | `/api/login`     | Login and get JWT token   | Public |
-| GET    | `/api/users`     | Get all users             | Private |
-| GET    | `/api/users/:id` | Get user by ID            | Private |
-| PUT    | `/api/users/:id` | Update user's name/email  | Private |
+| POST   | `/users`     | Register a new user       | Public |
+| POST   | `/login`     | Login and get JWT token   | Public |
+| GET    | `/users`     | Get all users             | Private |
+| GET    | `/users/:id` | Get user by ID            | Private |
+| PUT    | `/users/:id` | Update user's name/email  | Private |
 
 ### 🗂️ Task Management
 
 | Method | Endpoint           | Description                    | Access |
 |--------|--------------------|--------------------------------|--------|
-| POST   | `/api/tasks`       | Create a new task              | Private |
-| GET    | `/api/tasks`       | List all tasks                 | Private |
-| GET    | `/api/tasks/:id`   | Get task by ID                 | Private |
-| PUT    | `/api/tasks/:id`   | Update task                    | Private |
-| DELETE | `/api/tasks/:id`   | Delete task by ID              | Private |
+| POST   | `/tasks`       | Create a new task              | Private |
+| GET    | `/tasks`       | List all tasks                 | Private |
+| GET    | `/tasks/:id`   | Get task by ID                 | Private |
+| PUT    | `/tasks/:id`   | Update task                    | Private |
+| DELETE | `/tasks/:id`   | Delete task by ID              | Private |
 
 ---
 
-  
+
 
 
 
